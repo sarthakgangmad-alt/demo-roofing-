@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/style.css">
+  
+  <!-- SEO Meta Tags -->
+  <title>Skyline Roofing Toronto | Premium Luxury Roofing Experts</title>
+  <meta name="description" content="Toronto's premier roofing experts. Skyline Roofing Toronto offers luxury slate, copper, standing seam metal, and premium shingle installations across the GTA. Get a lifetime warranty and 0% financing today.">
+  <meta name="keywords" content="roofing toronto, premium roof replacement, metal roofing mississauga, luxury slate roof, flat roofing vaughan, emergency roof repair brampton, skyline roofing toronto">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Skyline Roofing Toronto | Premium Luxury Roofing Experts">
+  <meta property="og:description" content="Protecting Homes. Elevating Properties. Premium, custom-engineered roofing systems with lifetime warranty and GTA coverage.">
+  <meta property="og:image" content="/src/assets/hero-cinematic.png">
+  <meta property="og:type" content="website">
+  
+  <!-- JSON-LD Local Business Schema Markup -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Skyline Roofing Toronto",
+      "image": "/src/assets/hero-cinematic.png",
+      "description": "Toronto's premium roofing company specializing in luxury residential slate, copper, standing seam metal, and architectural shingle replacements.",
+      "telephone": "+1-416-555-0199",
+      "priceRange": "$$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "100 Front St W",
+        "addressLocality": "Toronto",
+        "addressRegion": "ON",
+        "postalCode": "M5J 1E3",
+        "addressCountry": "CA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 43.6452,
+        "longitude": -79.3806
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "07:00",
+        "closes": "19:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/skylineroofingtoronto",
+        "https://www.instagram.com/skylineroofingtoronto"
+      ],
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Toronto"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Mississauga"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Brampton"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Markham"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Vaughan"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Richmond Hill"
+        }
+      ]
+    }
+  </script>
+</head>
+<body>
+
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="loader-logo">SKYLINE<span>ROOFING</span></div>
+    <div class="loader-bar-bg">
+      <div class="loader-bar-fill" id="loader-fill"></div>
+    </div>
+    <div class="loader-pct" id="loader-pct">0%</div>
+  </div>
+
+  <!-- Navbar Header -->
+  <header>
+    <div class="nav-wrapper">
+      <a href="#" class="logo">
+        <span class="logo-main">SKYLINE</span>
+        <span class="logo-sub">Roofing Toronto</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#viewer-section">3D Roof Viewer</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#process">Our Process</a></li>
+        <li><a href="#faqs">FAQs</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="tel:+14165550199" class="phone-link">
+          <!-- Phone Icon SVG -->
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>(416) 555-0199</span>
+        </a>
+        <a href="#contact" class="btn btn-secondary">Get Estimate</a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay Menu -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+    <ul class="mobile-nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#viewer-section">3D Roof Viewer</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#process">Our Process</a></li>
+      <li><a href="#faqs">FAQs</a></li>
+      <li><a href="#contact" class="btn btn-primary" style="margin-top: 24px; display: inline-flex;">Get Free Estimate</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-bg" id="hero-bg-img"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-radial-glow"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag">Toronto's Premium Roofing Experts</div>
+          <h1 class="hero-title">Protecting Homes.<br>Elevating Properties.</h1>
+          <p class="hero-desc">Luxury custom roofing solutions engineered to withstand Toronto's harshest elements, trusted by elite homeowners across the Greater Toronto Area.</p>
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary">Get Free Estimate</a>
+            <a href="#projects" class="btn btn-secondary">View Case Studies</a>
+          </div>
+        </div>
+        <div class="hero-3d-container">
+          <canvas id="hero-3d-canvas"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Indicators & Counters Section -->
+  <section class="section section-dark" id="trust-section">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="counter-card glass-card">
+          <div class="counter-num" data-target="15">0</div>
+          <div class="counter-label">Years of Mastery</div>
+        </div>
+        <div class="counter-card glass-card">
+          <div class="counter-num" data-target="5000">0</div>
+          <div class="counter-label">Roofs Installed</div>
+        </div>
+        <div class="counter-card glass-card">
+          <div class="counter-num" data-target="4.9" data-decimals="1">0.0</div>
+          <div class="counter-label">Google Rating</div>
+        </div>
+        <div class="counter-card glass-card">
+          <div class="counter-num" data-target="100">0</div>
+          <div class="counter-label">Satisfaction Guarantee</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Reviews & Testimonials Section -->
+  <section class="section" id="reviews-section">
+    <div class="container">
+      <div class="reviews-grid">
+        <div class="reviews-summary">
+          <span class="section-subtitle">Real Homeowner Feedback</span>
+          <h2 class="section-title">The Standard of Excellence</h2>
+          <p>Read honest reviews from homeowners in Toronto, Mississauga, Oakville, and Vaughan. We carry a stellar reputation built on fine craftsmanship.</p>
+          <div class="google-rating-box">
+            <div class="rating-big">4.9</div>
+            <div class="rating-details">
+              <div class="stars">★★★★★</div>
+              <div class="reviews-count">Based on 312 Google Reviews</div>
+            </div>
+          </div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo" width="100" style="opacity: 0.6;">
+        </div>
+        
+        <div class="reviews-carousel">
+          <div class="review-card glass-card">
+            <div class="review-meta">
+              <div class="reviewer">
+                <div class="reviewer-avatar">MB</div>
+                <div>
+                  <div class="reviewer-name">Marcus Bennett</div>
+                  <div class="reviewer-loc">Forest Hill, Toronto</div>
+                </div>
+              </div>
+              <div class="stars">★★★★★</div>
+            </div>
+            <p class="review-body">"Skyline replaced our aging slate roof with absolute precision. The team was extremely professional, left the site spotless every day, and the standing seam accent copper is gorgeous. Truly custom craftsmanship worth every penny."</p>
+          </div>
+
+          <div class="review-card glass-card">
+            <div class="review-meta">
+              <div class="reviewer">
+                <div class="reviewer-avatar">SC</div>
+                <div>
+                  <div class="reviewer-name">Sarah Chen</div>
+                  <div class="reviewer-loc">Rosedale, Toronto</div>
+                </div>
+              </div>
+              <div class="stars">★★★★★</div>
+            </div>
+            <p class="review-body">"From the drone inspection to the final warranty certification, everything was seamless. They explained materials, offered excellent financing rates, and completed the job on time. Highly recommend Skyline for premium roofing."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive 3D Roof Viewer -->
+  <section class="section section-dark" id="viewer-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Interactive Design Studio</span>
+        <h2 class="section-title">Explore Our Luxury Materials</h2>
+        <p class="section-desc">Rotate and hover on different sections of the 3D roof model to inspect technical specifications, premium materials, and custom finishes.</p>
+      </div>
+
+      <div class="viewer-layout">
+        <div class="canvas-container">
+          <canvas id="roof-viewer-canvas"></canvas>
+          <div class="viewer-instructions">
+            <!-- Info Icon -->
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            <span>Click/Drag to rotate. Hover or click sections to see specs.</span>
+          </div>
+        </div>
+
+        <div class="viewer-details">
+          <div class="viewer-details-content glass-card" id="part-details-box">
+            <h3 class="part-title" id="part-title">Select Roof Element</h3>
+            <p class="part-desc" id="part-desc">Hover or click on the Slate Shingles, Standing Seam Metal panels, Flashing, or Eavestrough Gutters in the 3D model to inspect architectural details.</p>
+            <ul class="part-specs" id="part-specs" style="display: none;">
+              <li>Material Class: <span id="spec-class">-</span></li>
+              <li>Expected Lifespan: <span id="spec-life">-</span></li>
+              <li>Wind Resistance: <span id="spec-wind">-</span></li>
+              <li>Warranty: <span id="spec-warranty">-</span></li>
+            </ul>
+            <a href="#contact" class="btn btn-primary" id="part-cta" style="margin-top: auto; display: none;">Quote on this Material</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="services-intro-grid">
+        <div class="services-intro-content">
+          <span class="section-subtitle">Our Specializations</span>
+          <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">Architectural Roofing Services</h2>
+          <p class="section-desc" style="max-width: 100%; margin-bottom: 24px;">We deliver custom-engineered roofing systems tailored to aesthetic preferences and maximum structural durability. Our certified installers work with natural slate, architectural metals, and elite shingles to protect and elevate premium estates across the GTA.</p>
+          <div>
+            <a href="#contact" class="btn btn-secondary">Request Consultation</a>
+          </div>
+        </div>
+        <div class="services-intro-visual">
+          <div class="services-intro-image" id="services-intro-img"></div>
+        </div>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card glass-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m2 22 1-1h20l1 1"></path><path d="M12 2v20"></path><path d="M17 12h-5"></path><path d="m21 12-9-9-9 9"></path></svg>
+          </div>
+          <h3>Roof Replacement</h3>
+          <p>Full architectural tear-offs and structural replacements featuring premium GAF Camelot shingles, natural European slate, or heavy-gauge copper.</p>
+          <a href="#contact" class="service-link">Learn More &rarr;</a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card glass-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3>Metal Roofing</h3>
+          <p>Sleek, standing seam metal roofs made from architectural-grade steel, copper, or zinc, engineered for lifetimes of zero-maintenance durability.</p>
+          <a href="#contact" class="service-link">Learn More &rarr;</a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card glass-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+          </div>
+          <h3>Roof Repair</h3>
+          <p>Precision leak detection, storm damage mitigation, flashing restoration, and gutter repairs with exact color-matching techniques.</p>
+          <a href="#contact" class="service-link">Learn More &rarr;</a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card glass-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+          </div>
+          <h3>Emergency Roofing</h3>
+          <p>GTA's fastest response team for wind, hail, tree fall, or structural leaks. Secure tarping and immediate emergency repair within 2 hours.</p>
+          <a href="#contact" class="service-link">Learn More &rarr;</a>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card glass-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="9" x2="15" y2="15"></line><line x1="15" y1="9" x2="9" y2="15"></line></svg>
+          </div>
+          <h3>Flat Roofing</h3>
+          <p>Advanced commercial-grade single-ply membrane installations (TPO, EPDM) and high-performance two-ply SBS modified bitumen systems.</p>
+          <a href="#contact" class="service-link">Learn More &rarr;</a>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card glass-card">
+          <div class="service-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+          </div>
+          <h3>Commercial Roofing</h3>
+          <p>Large-scale roofing projects for shopping plazas, high-rises, industrial units, and multi-family structures across Ontario.</p>
+          <a href="#contact" class="service-link">Learn More &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Premium Case Study Section (with before-after slider) -->
+  <section class="section section-dark" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Showcase of Craftsmanship</span>
+        <h2 class="section-title">Our Masterpiece Case Studies</h2>
+        <p class="section-desc">Inspect real transformations. We treat every home as a high-end architectural exhibit, matching durability with unmatched elegance.</p>
+      </div>
+
+      <div class="case-studies-container">
+        <!-- Project 1 -->
+        <div class="case-study-item">
+          <div class="case-study-info">
+            <div class="case-study-meta">
+              <span class="meta-pill">Forest Hill</span>
+              <span class="meta-pill">Slate Restoration</span>
+            </div>
+            <h3 class="case-study-title">European Slate & Copper Refinement</h3>
+            <p class="case-study-desc">The clients had an aging roof suffering from leaks and structural sagging. Skyline undertook a complete engineering tear-off, reinforced the roof deck trusses, and installed premium Spanish slate with custom standing seam copper flashing along the valleys and chimney surrounds.</p>
+            
+            <div class="case-study-details">
+              <div class="case-detail-box">
+                <div class="case-detail-label">Completion Time</div>
+                <div class="case-detail-val">6 Business Days</div>
+              </div>
+              <div class="case-detail-box">
+                <div class="case-detail-label">Warranty Issued</div>
+                <div class="case-detail-val">Lifetime Workmanship</div>
+              </div>
+              <div class="case-detail-box">
+                <div class="case-detail-label">Material Class</div>
+                <div class="case-detail-val">A1 Natural Slate</div>
+              </div>
+              <div class="case-detail-box">
+                <div class="case-detail-label">Customer Rating</div>
+                <div class="case-detail-val">★★★★★ 5.0 Rating</div>
+              </div>
+            </div>
+          </div>
+          <div class="case-study-visual">
+            <div class="comparison-slider-wrapper" id="before-after-slider">
+              <!-- Before Image -->
+              <div class="comparison-image comparison-before" id="img-before"></div>
+              <!-- After Image (clipped) -->
+              <div class="comparison-image comparison-after" id="img-after"></div>
+              <!-- Controls -->
+              <div class="slider-handle" id="slider-handle">
+                <div class="slider-button">&harr;</div>
+              </div>
+              <div class="slider-label before-label">Before</div>
+              <div class="slider-label after-label">After</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roofing Process Timeline Section -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Our Delivery Methodology</span>
+        <h2 class="section-title">The Skyline Process</h2>
+        <p class="section-desc">Experience a structured, luxury-level workflow designed to ensure absolute peace of mind at every phase of your project.</p>
+      </div>
+
+      <div class="process-timeline">
+        <!-- Step 1 -->
+        <div class="process-step">
+          <div class="process-dot"></div>
+          <span class="process-num">01 / DIAGNOSTICS</span>
+          <h3 class="process-step-title">Premium Digital Drone Inspection</h3>
+          <p class="process-step-desc">We dispatch thermal-imaging drones to scan your roof, identifying subsurface moisture intrusion, flashing stress points, and insulation loss without touching a single shingle. You receive a complete digital diagnostic report.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="process-step">
+          <div class="process-dot"></div>
+          <span class="process-num">02 / CONSULTATION</span>
+          <h3 class="process-step-title">Fixed-Price Architectural Proposal</h3>
+          <p class="process-step-desc">No pushy sales. We provide a transparent material board, a detailed project roadmap, fixed pricing options, and flexible 0% interest financing options. What we quote is what you pay—down to the penny.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process-step">
+          <div class="process-dot"></div>
+          <span class="process-num">03 / INSTALLATION</span>
+          <h3 class="process-step-title">Mastercraft Installation</h3>
+          <p class="process-step-desc">Our certified factory-trained roofers execute the tear-off and installation. We use heavy-duty site protection (Equipter catchers) to guarantee your landscaping, gardens, and driveway remain completely pristine.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="process-step">
+          <div class="process-dot"></div>
+          <span class="process-num">04 / CERTIFICATION</span>
+          <h3 class="process-step-title">50-Point inspection & Lifetime Warranty</h3>
+          <p class="process-step-desc">A dedicated Quality Assurance supervisor performs a comprehensive 50-point inspection. We activate your registered Lifetime Workmanship and Material Warranty and hand over your certification portfolio.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Financing & Warranty Section -->
+  <section class="section section-dark" id="financing-section">
+    <div class="container">
+      <div class="financing-box glass-card">
+        <div class="financing-info">
+          <span class="financing-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+            Financing Options Available
+          </span>
+          <h2 class="section-title" style="font-size: 32px; text-align: left; margin-bottom: 20px;">Elite Roofs. Flexible Investments.</h2>
+          <p style="margin-bottom: 24px;">Investing in a premium roof adds massive structural value and curb appeal to your home. We offer customizable repayment solutions to fit your asset plans:</p>
+          <ul style="list-style: none; margin-bottom: 32px; color: var(--text-secondary);">
+            <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold);"><polyline points="20 6 9 17 4 12"></polyline></svg> 0% Interest Plans for up to 12 Months</li>
+            <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold);"><polyline points="20 6 9 17 4 12"></polyline></svg> Low monthly payments starting at $149/mo</li>
+            <li style="margin-bottom: 12px; display: flex; align-items: center; gap: 8px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold);"><polyline points="20 6 9 17 4 12"></polyline></svg> No prepayment penalties, pre-approval in 5 minutes</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Calculate Payments</a>
+        </div>
+        <div class="warranty-box">
+          <div class="warranty-card glass-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon><line x1="12" y1="2" x2="12" y2="22"></line><line x1="12" y1="22" x2="22" y2="15.5"></line><line x1="12" y1="2" x2="2" y2="8.5"></line></svg>
+            <h3 class="warranty-title">Lifetime Workmanship</h3>
+            <p class="warranty-desc">Direct backing on all structural labor. If a leak ever occurs due to our installation workmanship, we repair it free of charge.</p>
+          </div>
+          <div class="warranty-card glass-card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            <h3 class="warranty-title">Registered Materials</h3>
+            <p class="warranty-desc">As certified installers, we register your roof directly with top manufacturers (GAF, Owens Corning) for complete lifetime material coverage.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency 24H Repair CTA Section -->
+  <section class="section" style="padding-bottom: 40px;">
+    <div class="container">
+      <div id="emergency-section">
+        <canvas class="emergency-bg-canvas" id="storm-canvas"></canvas>
+        <div class="emergency-wrapper">
+          <span class="emergency-tag">GTA 24-Hour Hot Response</span>
+          <h2 class="emergency-title">Roof Leaks or Storm Damage?</h2>
+          <p class="emergency-desc">Don't wait for mold or water damage. Our rapid emergency response team dispatched in active rain/storms to tarp and protect your home.</p>
+          <div class="emergency-btn-grp">
+            <a href="tel:+14165550199" class="btn btn-primary" style="background-color: #e53e3e; color: white;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              Call (416) 555-0199
+            </a>
+            <a href="#contact" class="btn btn-secondary">Request Fast Dispatch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead-Generating Contact & Map Section -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="contact-layout">
+        <!-- Interactive Multi-Step Quote Wizard -->
+        <div class="contact-card glass-card">
+          <span class="section-subtitle">Online Design Estimator</span>
+          <h2 class="section-title" style="font-size: 28px; text-align: left; margin-bottom: 24px;">Request Your Custom Quote</h2>
+          
+          <div class="wizard-steps-container">
+            <div class="wizard-progress-bar">
+              <div class="wizard-progress-fill" id="wizard-progress"></div>
+            </div>
+          </div>
+
+          <form id="quote-wizard-form" autocomplete="on">
+            <!-- Step 1: Service Type -->
+            <div class="wizard-step-panel active" data-step="1">
+              <span class="form-label">Step 1: Select Your Roofing Service</span>
+              <div class="form-grid-options">
+                <div class="option-card selected" data-value="replacement">
+                  <h4>Full Replacement</h4>
+                  <p>For aging roofs & upgrades</p>
+                </div>
+                <div class="option-card" data-value="repair">
+                  <h4>Precision Repair</h4>
+                  <p>Fixing leaks, valleys & tiles</p>
+                </div>
+                <div class="option-card" data-value="inspection">
+                  <h4>Inspection & Diagnosis</h4>
+                  <p>Detailed drone reporting</p>
+                </div>
+                <div class="option-card" data-value="commercial">
+                  <h4>Commercial Roofing</h4>
+                  <p>Plazas, flat roofs & industrial</p>
+                </div>
+              </div>
+              <input type="hidden" name="service_type" id="input-service-type" value="replacement">
+            </div>
+
+            <!-- Step 2: Material Preference -->
+            <div class="wizard-step-panel" data-step="2">
+              <span class="form-label">Step 2: Select Material Preference</span>
+              <div class="form-grid-options">
+                <div class="option-card selected" data-value="shingles">
+                  <h4>Premium Shingles</h4>
+                  <p>Aesthetic architectural style</p>
+                </div>
+                <div class="option-card" data-value="metal">
+                  <h4>Standing Seam Metal</h4>
+                  <p>Lifetime modern durability</p>
+                </div>
+                <div class="option-card" data-value="slate">
+                  <h4>Natural Slate / Copper</h4>
+                  <p>Elite luxury craftsmanship</p>
+                </div>
+                <div class="option-card" data-value="flat">
+                  <h4>Single-Ply Membrane</h4>
+                  <p>Engineered flat systems</p>
+                </div>
+              </div>
+              <input type="hidden" name="material_type" id="input-material-type" value="shingles">
+            </div>
+
+            <!-- Step 3: Location Details -->
+            <div class="wizard-step-panel" data-step="3">
+              <span class="form-label">Step 3: Property Details</span>
+              <div class="form-group">
+                <label for="address-input" class="form-label">Property Address</label>
+                <input type="text" id="address-input" name="property_address" class="form-control" placeholder="123 Bay St, Toronto, ON" required autocomplete="street-address">
+              </div>
+              <div class="form-group">
+                <label for="timeline-select" class="form-label">Estimated Project Timeline</label>
+                <select id="timeline-select" name="project_timeline" class="form-control">
+                  <option value="immediate">Immediate (Leaking or Damaged)</option>
+                  <option value="1month">Within 1 Month</option>
+                  <option value="3months">Within 3 Months</option>
+                  <option value="planning">Just Planning / Pricing</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Step 4: Contact Info -->
+            <div class="wizard-step-panel" data-step="4">
+              <span class="form-label">Step 4: Contact & Verification</span>
+              <div class="form-group">
+                <label for="name-input" class="form-label">Full Name</label>
+                <input type="text" id="name-input" name="client_name" class="form-control" placeholder="Johnathan Miller" required autocomplete="name">
+              </div>
+              <div class="form-grid-options" style="margin-bottom: 0;">
+                <div class="form-group" style="margin-bottom: 0;">
+                  <label for="phone-input" class="form-label">Phone Number</label>
+                  <input type="tel" id="phone-input" name="client_phone" class="form-control" placeholder="(416) 555-0123" required autocomplete="tel">
+                </div>
+                <div class="form-group" style="margin-bottom: 0;">
+                  <label for="email-input" class="form-label">Email Address</label>
+                  <input type="email" id="email-input" name="client_email" class="form-control" placeholder="john@domain.com" required autocomplete="email">
+                </div>
+              </div>
+            </div>
+
+            <!-- Wizard Navigation -->
+            <div class="wizard-nav">
+              <button type="button" class="btn btn-secondary" id="btn-back" style="display: none;">Back</button>
+              <button type="button" class="btn btn-primary" id="btn-next" style="margin-left: auto;">Continue</button>
+              <button type="submit" class="btn btn-primary" id="btn-submit" style="display: none; margin-left: auto;">Submit Proposal Request</button>
+            </div>
+          </form>
+
+          <!-- Callback Request Widget (Inside contact section for quick secondary conversion) -->
+          <div class="callback-form-box">
+            <h4>Request a 60-Second Callback</h4>
+            <p style="font-size: 13px; margin-bottom: 16px;">We call you right back during business hours. Enter your phone:</p>
+            <form class="callback-form" id="callback-form">
+              <input type="tel" class="form-control" placeholder="Your Phone Number" required id="callback-phone" autocomplete="tel">
+              <button type="submit" class="btn btn-primary" style="padding: 12px 20px;">Call Me</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Interactive Map Mockup -->
+        <div class="map-container">
+          <div class="map-overlay-info">
+            <h4>Skyline Service Coverage</h4>
+            <p style="font-size: 12px; color: var(--text-secondary);">Serving the Greater Toronto Area with elite roofing systems.</p>
+          </div>
+          <!-- Pulse marker 1 (Toronto Center) -->
+          <div class="map-pulse-marker" style="top: 55%; left: 62%;">
+            <div class="map-pulse-ring"></div>
+          </div>
+          <!-- Pulse marker 2 (Vaughan) -->
+          <div class="map-pulse-marker" style="top: 30%; left: 45%;">
+            <div class="map-pulse-ring"></div>
+          </div>
+          <!-- Pulse marker 3 (Mississauga) -->
+          <div class="map-pulse-marker" style="top: 70%; left: 25%;">
+            <div class="map-pulse-ring"></div>
+          </div>
+          
+          <svg class="map-svg-mock" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Simulated shoreline of Lake Ontario -->
+            <path d="M50 350 C 150 360, 250 330, 380 340 C 420 345, 470 335, 500 320" stroke="#1d2d44" stroke-width="3" stroke-dasharray="5 5"></path>
+            <!-- Simulated highway paths -->
+            <path d="M0 200 Q 250 180, 500 230" stroke="#1c1d24" stroke-width="2"></path>
+            <path d="M220 0 Q 250 200, 200 400" stroke="#1c1d24" stroke-width="2"></path>
+            <!-- Service boundary radius circle -->
+            <circle cx="260" cy="200" r="140" stroke="rgba(212, 175, 55, 0.2)" stroke-width="2" stroke-dasharray="6 6" fill="rgba(212, 175, 55, 0.02)"></circle>
+            <!-- Boundary markers -->
+            <text x="260" y="50" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="middle" font-family="'Outfit', sans-serif">NORTH: RICHMOND HILL</text>
+            <text x="50" y="240" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="start" font-family="'Outfit', sans-serif">WEST: MISSISSAUGA</text>
+            <text x="450" y="210" fill="rgba(255,255,255,0.4)" font-size="10" text-anchor="end" font-family="'Outfit', sans-serif">EAST: MARKHAM</text>
+            <text x="260" y="325" fill="rgba(255,255,255,0.6)" font-size="12" text-anchor="middle" font-family="'Cinzel', serif" font-weight="bold">LAKE ONTARIO</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Local SEO FAQ Section -->
+  <section class="section" id="faqs">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Answering Homeowner Queries</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">Get authoritative answers to common roofing questions regarding materials, timelines, warranties, and insurance in Toronto.</p>
+      </div>
+
+      <div class="faq-grid">
+        <!-- FAQ 1 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How does weather in the Greater Toronto Area affect roofing material choices?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          </div>
+          <div class="faq-answer">
+            <p>Toronto experiences extreme freeze-thaw cycles in winter and intense humidity/heat in summer. Standing seam metal and natural slate offer the absolute best resistance to these cycles since they don't absorb moisture. Premium architectural shingles with synthetic underlayment are also excellent mid-range options that prevent ice damming.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>What is the difference between a workmanship warranty and a manufacturer warranty?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          </div>
+          <div class="faq-answer">
+            <p>A manufacturer warranty covers defects in the material itself (e.g., shingles losing granules prematurely). A workmanship warranty covers installation errors (e.g., improper nailing or flashing placement). Skyline provides both: direct Lifetime Workmanship protection and fully registered, factory-backed manufacturer warranties.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>How long does a typical luxury roof replacement take in Toronto?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          </div>
+          <div class="faq-answer">
+            <p>Most standard residential roofs take 2 to 4 business days. High-end natural slate or standing seam metal custom builds take 5 to 8 business days due to the specialized bending, cutting, and structural reinforcements required. We always monitor weather cycles closely to keep your home protected.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>Do you offer financing options for premium roof replacements?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, we partner with premier home improvement lenders in Ontario to offer 0% interest terms for up to 12 months, and low monthly repayment plans beginning at $149/month. Pre-approval takes 5 minutes online, is completely private, and does not impact your credit score.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Multi-Column Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="#" class="logo" style="margin-bottom: 20px;">
+            <span class="logo-main" style="font-size: 24px;">SKYLINE</span>
+            <span class="logo-sub" style="font-size: 12px;">Roofing Toronto</span>
+          </a>
+          <p style="font-size: 14px; margin-bottom: 24px;">Custom agency-grade, engineered roofing systems for Rosedale, Forest Hill, Oakville, and Vaughan elite estates. Quality workmanship backed by lifetime guarantees.</p>
+          <div class="footer-phone" style="font-weight: 600; font-size: 16px; color: var(--text-primary);">
+            Direct Line: <a href="tel:+14165550199" style="color: var(--accent-gold); text-decoration: none;">(416) 555-0199</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Roof Replacement</a></li>
+            <li><a href="#services">Metal Roofing</a></li>
+            <li><a href="#services">Emergency Repairs</a></li>
+            <li><a href="#services">Flat Roofing</a></li>
+            <li><a href="#services">Drone Inspections</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Service Areas</h4>
+          <ul>
+            <li><a href="#contact">Toronto & Downtown</a></li>
+            <li><a href="#contact">Mississauga</a></li>
+            <li><a href="#contact">Markham</a></li>
+            <li><a href="#contact">Vaughan</a></li>
+            <li><a href="#contact">Brampton & Richmond Hill</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Certifications</h4>
+          <p style="font-size: 13px; margin-bottom: 16px;">We are factory-certified Master Elite contractors, fully bonded, insured with $5M general liability, and WSIB compliant.</p>
+          <div class="footer-badges">
+            <span style="border: 1px solid var(--border-gold); padding: 4px 8px; font-size: 10px; border-radius: 2px; color: var(--accent-gold);">GAF MASTER ELITE</span>
+            <span style="border: 1px solid var(--border-color); padding: 4px 8px; font-size: 10px; border-radius: 2px;">WSIB COMPLIANT</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">&copy; 2026 Skyline Roofing Toronto. All Rights Reserved. Private luxury craftsmanship.</div>
+        <div class="footer-links">
+          <a href="#" style="color: var(--text-muted); font-size: 12px; margin-left: 20px; text-decoration: none;">Privacy Policy</a>
+          <a href="#" style="color: var(--text-muted); font-size: 12px; margin-left: 20px; text-decoration: none;">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Exit-Intent Popup Offer Modal -->
+  <div class="modal-overlay" id="exit-intent-modal">
+    <div class="modal-box">
+      <button type="button" class="modal-close" id="modal-close">&times;</button>
+      <span class="modal-badge">Exclusive GTA Homeowner Offer</span>
+      <h3 class="modal-title">Planning a Roof Replacement?</h3>
+      <p class="modal-desc" style="font-size: 15px; color: var(--text-secondary); line-height: 1.5; margin-bottom: 24px;">Download our free, comprehensive guide: **"How to Choose a Premium Roof in Toronto"** (Material comparisons, lifetime warranty checkers, and pricing checklists) and lock in a **$500 project voucher** instantly.</p>
+      
+      <form id="exit-intent-form">
+        <div class="form-group">
+          <input type="text" placeholder="Your Full Name" class="form-control" required id="exit-name" autocomplete="name">
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email Address" class="form-control" required id="exit-email" autocomplete="email">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 16px;">Secure $500 Voucher + Download Guide</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Mobile Sticky Footer CTAs -->
+  <div class="mobile-sticky-bar">
+    <a href="tel:+14165550199" class="btn btn-secondary" style="border-radius: 4px; padding: 12px; text-align: center; border-color: var(--accent-gold); color: var(--accent-gold);">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px; vertical-align: middle;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      Call Now
+    </a>
+    <a href="#contact" class="btn btn-primary" style="border-radius: 4px; padding: 12px; text-align: center;">
+      Free Estimate
+    </a>
+  </div>
+
+  <!-- Main Bundler Entry Point -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
